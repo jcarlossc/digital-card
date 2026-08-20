@@ -5,31 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (year) {
         year.textContent = new Date().getFullYear();
     }
-
-    /* ======================== BOTÃO DE TEMA ========================= */
-    const themeButton =
-        document.getElementById("themeButton");
-    if (themeButton) {
-        themeButton.addEventListener("click",() => {
-                document.body.classList.toggle(
-                    "light-mode"
-                );
-                const icon =
-                    themeButton.querySelector("i");
-                if (
-                    document.body.classList.contains(
-                        "light-mode"
-                    )
-                ) {
-                    icon.className =
-                        "bi bi-sun";
-                } else {
-                    icon.className =
-                        "bi bi-moon-stars";
-                }
-            }
-        );
-    }
     /* ========================= ANIMAÇÃO DOS CARDS ======================== */
     const cards =
         document.querySelectorAll(
