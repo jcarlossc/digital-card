@@ -1,0 +1,836 @@
+:root {
+
+    --bg: #010417;
+
+    --blue: #071027;
+
+    --cyan: rgba(1, 70, 134, 100);
+
+    --white: #ffffff;
+
+    --text: #dce7f5;
+
+    --muted: #8290a8;
+
+    --border: rgba(255, 255, 255, 0.09);
+
+    --card: #0a1228;
+
+    --glass: #0a1228;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Inter", sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 20% 10%,
+            rgba(2, 34, 135, 0.20),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(58, 221, 247, 0.08),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--white);
+
+    min-height: 100vh;
+
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.digital-card {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    padding: 45px 25px;
+
+}
+
+
+.digital-card .container {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 780px;
+
+}
+
+
+/* =====================================================
+   GLOW
+===================================================== */
+
+.glow {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(90px);
+
+    pointer-events: none;
+
+}
+
+
+.glow-one {
+
+    width: 300px;
+
+    height: 300px;
+
+    background: rgba(2, 34, 135, 0.18);
+
+    top: -120px;
+
+    right: -80px;
+
+}
+
+
+.glow-two {
+
+    width: 220px;
+
+    height: 220px;
+
+    background: rgba(58, 221, 247, 0.08);
+
+    bottom: 10%;
+
+    left: -100px;
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 55px;
+
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+
+.brand-symbol {
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 800;
+
+    color: var(--cyan);
+
+    border: 1px solid var(--border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(2, 34, 135, 0.45),
+            rgba(1, 4, 23, 0.8)
+        );
+
+    box-shadow:
+        0 0 25px rgba(58, 221, 247, 0.08);
+}
+
+
+.brand h1 {
+
+    font-size: 1.35rem;
+
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+
+    margin: 0;
+
+}
+
+
+.brand h1 span {
+
+    color: var(--cyan);
+
+}
+
+
+.brand p {
+
+    margin: 3px 0 0;
+
+    color: var(--muted);
+
+    font-size: 0.62rem;
+
+    letter-spacing: 2.5px;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   THEME BUTTON
+===================================================== */
+
+.theme-button {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: 1px solid var(--border);
+
+    background: rgba(2, 34, 135, 0.12);
+
+    color: var(--cyan);
+
+    transition: 0.3s;
+
+}
+
+
+.theme-button:hover {
+
+    transform: rotate(15deg);
+
+    background: rgba(58, 221, 247, 0.10);
+
+    box-shadow:
+        0 0 20px rgba(58, 221, 247, 0.15);
+
+}
+
+
+/* =====================================================
+   PROFILE
+===================================================== */
+
+.profile-section {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 35px;
+
+    border-radius: 24px;
+
+    border: 1px solid var(--border);
+
+
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.profile-image {
+
+    flex-shrink: 0;
+
+}
+
+
+.profile-placeholder {
+
+    width: 125px;
+
+    height: 125px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 2.8rem;
+
+    color: var(--cyan);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(58, 221, 247, 0.12),
+            rgba(2, 34, 135, 0.28)
+        );
+
+    border: 1px solid rgba(58, 221, 247, 0.30);
+
+    box-shadow:
+        0 0 35px rgba(58, 221, 247, 0.08);
+
+}
+
+
+.eyebrow {
+
+    color: var(--cyan);
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.profile-info h2 {
+
+    margin-top: 8px;
+
+    margin-bottom: 5px;
+
+    font-size: 2.1rem;
+
+    font-weight: 800;
+
+}
+
+
+.profile-info h3 {
+
+    font-size: 0.82rem;
+
+    color: #b7c4d8;
+
+    font-weight: 500;
+
+}
+
+
+.profile-info h3 span {
+
+    color: var(--cyan);
+
+    margin: 0 5px;
+
+}
+
+
+.profile-info p {
+
+    color: var(--muted);
+
+    margin-top: 15px;
+
+    line-height: 1.7;
+
+    max-width: 560px;
+
+}
+
+
+/* =====================================================
+   SECTION TITLE
+===================================================== */
+
+.services,
+.contact-section {
+
+    margin-top: 55px;
+
+}
+
+
+.section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.section-title span {
+
+    width: 25px;
+
+    height: 2px;
+
+    background: var(--cyan);
+
+    box-shadow:
+        0 0 10px rgba(58, 221, 247, 0.6);
+
+}
+
+
+.section-title h4 {
+
+    margin: 0;
+
+    font-size: 0.72rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    color: #a9b8cc;
+
+}
+
+
+/* =====================================================
+   SERVICE CARDS
+===================================================== */
+
+.service-card {
+
+    height: 100%;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.service-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(58, 221, 247, 0.45);
+
+    background:
+        rgba(2, 34, 135, 0.20);
+
+}
+
+.service-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    color: var(--cyan);
+
+    background:
+        rgba(58, 221, 247, 0.07);
+
+    margin-bottom: 18px;
+
+    font-size: 1.2rem;
+
+}
+
+
+.service-card h5 {
+
+    font-size: 0.95rem;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+}
+
+
+.service-card p {
+
+    color: var(--muted);
+
+    font-size: 0.80rem;
+
+    line-height: 1.7;
+
+    margin: 0;
+
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 17px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+
+    color: var(--white);
+
+    background:
+        rgba(2, 34, 135, 0.08);
+
+    border: 1px solid
+        rgba(58, 221, 247, 0.10);
+
+    transition: 0.3s;
+
+}
+
+
+.contact-item:hover {
+
+    color: var(--white);
+
+    transform: translateX(4px);
+
+    border-color:
+        rgba(58, 221, 247, 0.30);
+
+}
+
+
+.contact-item > i {
+
+    color: var(--cyan);
+
+    font-size: 1.15rem;
+
+}
+
+
+.contact-item small {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: 0.65rem;
+
+    margin-bottom: 3px;
+
+}
+
+
+.contact-item strong {
+
+    font-size: 0.75rem;
+
+    font-weight: 500;
+
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta-section {
+
+    margin-top: 50px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(2, 34, 135, 0.30),
+            rgba(58, 221, 247, 0.06)
+        );
+
+    border: 1px solid
+        rgba(58, 221, 247, 0.20);
+
+}
+
+
+.cta-section span {
+
+    font-size: 0.6rem;
+
+    letter-spacing: 2px;
+
+    color: var(--cyan);
+
+    font-weight: 700;
+
+}
+
+
+.cta-section h4 {
+
+    margin: 8px 0 0;
+
+    font-size: 1rem;
+
+    line-height: 1.5;
+
+}
+
+
+.cta-button {
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    background: var(--cyan);
+
+    color: var(--bg);
+
+    text-decoration: none;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+
+}
+
+
+.cta-button:hover {
+
+    color: var(--bg);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 30px rgba(58, 221, 247, 0.18);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    margin-top: 40px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid
+        rgba(255, 255, 255, 0.06);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #536178;
+
+    font-size: 0.62rem;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .digital-card {
+
+        padding:
+            25px 18px 35px;
+
+    }
+
+
+    .card-header {
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .profile-section {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+
+    }
+
+    .service-card p {
+
+        font-size: 1rem;
+
+
+}
+
+
+    .profile-info h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+
+    .profile-info h3 {
+
+        line-height: 1.8;
+
+    }
+
+
+    .contact-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .cta-section {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .cta-button {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+
+    }
+
+}
