@@ -289,7 +289,7 @@ body {
 
     border: 1px solid var(--border);
 
-
+    background-color: var(--card);
 
     box-shadow:
         0 20px 60px rgba(0, 0, 0, 0.25);
@@ -502,8 +502,7 @@ body {
 
     color: var(--cyan);
 
-    background:
-        rgba(58, 221, 247, 0.07);
+    background: rgba(7, 16, 39, 0.75)
 
     margin-bottom: 18px;
 
@@ -567,8 +566,7 @@ body {
 
     color: var(--white);
 
-    background:
-        rgba(2, 34, 135, 0.08);
+    background: rgba(7, 16, 39, 0.75);
 
     border: 1px solid
         rgba(58, 221, 247, 0.10);
@@ -584,8 +582,7 @@ body {
 
     transform: translateX(4px);
 
-    border-color:
-        rgba(58, 221, 247, 0.30);
+    background: rgba(2, 34, 135, 0.08);
 
 }
 
