@@ -602,7 +602,7 @@ body {
 
     color: var(--muted);
 
-    font-size: 0.65rem;
+    font-size: 0.75rem;
 
     margin-bottom: 3px;
 
@@ -611,7 +611,7 @@ body {
 
 .contact-item strong {
 
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 
     font-weight: 500;
 
