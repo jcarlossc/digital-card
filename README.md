@@ -179,8 +179,6 @@ Depois acesse:
 http://localhost:8000
 ```
 
----
-
 ## 🌐 Deploy
 
 O projeto é publicado utilizando **GitHub Pages**.
@@ -188,8 +186,6 @@ O projeto é publicado utilizando **GitHub Pages**.
 A versão publicada está disponível em:
 
 **https://jcarlossc.github.io/digital-card/**
-
----
 
 ## 🎨 Identidade visual
 
@@ -208,8 +204,6 @@ A identidade foi pensada para transmitir:
 * Profissionalismo
 * Inovação
 
----
-
 ## 📈 Objetivo profissional
 
 O cartão digital faz parte da presença profissional da **DataQuantum — Soluções em Dados**.
@@ -227,8 +221,6 @@ A solução pode ser utilizada em:
 * Currículos
 * Eventos profissionais
 * QR Codes
-
----
 
 ## 🔗 Links
 
